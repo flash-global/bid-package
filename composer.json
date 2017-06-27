@@ -22,7 +22,7 @@
     ],
     "require": {
         "objective-php/application": "~1.1.0",
-        "fei/bid-client": "~1.0.0"
+        "fei/bid-client": "~2.0.0"
     },
     "require-dev": {
         "phpro/grumphp": "^0.11.1",
