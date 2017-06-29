@@ -566,17 +566,17 @@
         },
         {
             "name": "fei/bid-client",
-            "version": "V2.0.2",
+            "version": "V2.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:flash-global/bid-client.git",
-                "reference": "0b96e7941b36d6c379b10000aa32c5d0786ba924"
+                "reference": "aa6ee9f91dbdeab51cc995939161f2219853308e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.flash-global.net/dist/fei-bid-client-0b96e7941b36d6c379b10000aa32c5d0786ba924-zip-7a4d38.zip",
-                "reference": "0b96e7941b36d6c379b10000aa32c5d0786ba924",
-                "shasum": "e1e4b1a0d33d503416fb41c9bb2178c14cf1858a"
+                "url": "https://composer.flash-global.net/dist/fei-bid-client-aa6ee9f91dbdeab51cc995939161f2219853308e-zip-258aca.zip",
+                "reference": "aa6ee9f91dbdeab51cc995939161f2219853308e",
+                "shasum": "d869eaec5c37937e0a6df42116a6827ccab48f51"
             },
             "require": {
                 "fei/api-client": "^1.1",
@@ -606,7 +606,7 @@
                 "source": "https://github.com/flash-global/bid-client/tree/master",
                 "issues": "https://github.com/flash-global/bid-client/issues"
             },
-            "time": "2017-06-27T07:42:27+00:00"
+            "time": "2017-06-29T14:03:23+00:00"
         },
         {
             "name": "fei/bid-common",
