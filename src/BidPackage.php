@@ -44,13 +44,13 @@ class BidPackage
         $baseUrl = $config->get(BidBaseUrl::class);
 
         $app->getServicesFactory()->registerService([
-            'id' => 'transport.basic',
+            'id' => 'bid.transport.basic',
             'class' => BasicTransport::class,
-            'params' => [$baseUrl],
+            'params' => [['base_uri' => $baseUrl]],
         ]);
 
         $setters = [
-            'setTransport' => [new ServiceReference('transport.basic')],
+            'setTransport' => [new ServiceReference('bid.transport.basic')],
         ];
 
         $app->getServicesFactory()->registerService(
