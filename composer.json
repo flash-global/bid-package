@@ -1,12 +1,12 @@
 {
     "name": "fei/bid-package",
     "description": "Bid client package integration for Objective PHP applications",
-    "type": "library",
-    "license": "proprietary",
+    "type": "GPL-3.0-or-later",
+    "license": "",
     "authors": [
         {
-            "name": "Boris CERATI",
-            "email": "bce@opcoding.eu"
+            "name": "Vincent Simonin",
+            "email": "v.simonin@redspher.com"
         }
     ],
     "autoload": {
@@ -14,12 +14,6 @@
             "Fei\\Service\\Bid\\Package\\": "src/"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://composer.flash.global"
-        }
-    ],
     "require": {
         "objective-php/application": "~1.1.0",
         "fei/bid-client": "~2.0.0"
