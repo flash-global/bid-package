@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "40cd8cc0d85abcb4def14714a05022ae",
+    "hash": "c9600b780d0003433449bb826aeaa581",
     "content-hash": "9b539322a47a58246034440f0ea2411b",
     "packages": [
         {
@@ -822,16 +822,16 @@
         },
         {
             "name": "fei/bid-client",
-            "version": "v2.0.8",
+            "version": "v2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flash-global/bid-client.git",
-                "reference": "ce99d85129affe72d17146585edbb9cacb4c01a4"
+                "reference": "0e93fa94504c4ee1a4bc968fa7c09fd4b811dade"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flash-global/bid-client/zipball/ce99d85129affe72d17146585edbb9cacb4c01a4",
-                "reference": "ce99d85129affe72d17146585edbb9cacb4c01a4",
+                "url": "https://api.github.com/repos/flash-global/bid-client/zipball/0e93fa94504c4ee1a4bc968fa7c09fd4b811dade",
+                "reference": "0e93fa94504c4ee1a4bc968fa7c09fd4b811dade",
                 "shasum": ""
             },
             "require": {
@@ -850,7 +850,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0-or-later"
+                "GPL-3.0"
             ],
             "authors": [
                 {
@@ -859,7 +859,7 @@
                 }
             ],
             "description": "Flash applicative Bid - client component",
-            "time": "2019-01-22 16:31:56"
+            "time": "2019-01-23 17:23:04"
         },
         {
             "name": "fei/bid-common",
