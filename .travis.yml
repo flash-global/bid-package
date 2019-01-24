@@ -14,7 +14,6 @@ cache:
         - $HOME/.composer/cache
 
 script:
-    - vendor/bin/codecept run unit
     - vendor/bin/phpcs src
 
 notifications:
