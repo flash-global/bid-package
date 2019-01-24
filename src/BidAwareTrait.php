@@ -4,7 +4,8 @@ namespace Fei\Service\Bid\Package;
 use Fei\Service\Bid\Client\Bidder;
 
 /**
- * Class BidAwareTrait
+ * Trait BidAwareTrait
+ *
  * @package Fei\Service\Bid\Package
  */
 trait BidAwareTrait
