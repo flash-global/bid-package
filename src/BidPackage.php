@@ -43,9 +43,12 @@ class BidPackage
         }
 
         $baseUrl = $config->get(BidBaseUrl::class);
-        $authorizationKey = null;
+        $params = [
+            AbstractApiClient::OPTION_BASEURL => $baseUrl
+        ];
+
         if ($config->has(BidAuthorization::class)) {
-            $authorizationKey = $config->get(BidAuthorization::class);
+            $params[AbstractApiClient::OPTION_HEADER_AUTHORIZATION] = $config->get(BidAuthorization::class);
         }
 
         $app->getServicesFactory()->registerService([
@@ -55,15 +58,14 @@ class BidPackage
         ]);
 
         $setters = [
-            'setTransport' => [new ServiceReference('bid.transport.basic')],
-            'setAuthorization' => [$authorizationKey]
+            'setTransport' => [new ServiceReference('bid.transport.basic')]
         ];
 
         $app->getServicesFactory()->registerService(
             [
                 'id' => $this->identifier,
                 'class' => Bidder::class,
-                'params' => [[AbstractApiClient::OPTION_BASEURL => $baseUrl]],
+                'params' => [$params],
                 'setters' => $setters
             ]
         );
