@@ -5,6 +5,7 @@ namespace Fei\Service\Bid\Package;
 use Fei\ApiClient\AbstractApiClient;
 use Fei\ApiClient\Transport\BasicTransport;
 use Fei\Service\Bid\Client\Bidder;
+use Fei\Service\Bid\Package\Config\BidAuthorization;
 use Fei\Service\Bid\Package\Config\BidBaseUrl;
 use ObjectivePHP\Application\ApplicationInterface;
 use ObjectivePHP\ServicesFactory\ServiceReference;
@@ -42,6 +43,10 @@ class BidPackage
         }
 
         $baseUrl = $config->get(BidBaseUrl::class);
+        $authorizationKey = null;
+        if ($config->has(BidAuthorization::class)) {
+            $authorizationKey = $config->get(BidAuthorization::class);
+        }
 
         $app->getServicesFactory()->registerService([
             'id' => 'bid.transport.basic',
@@ -51,6 +56,7 @@ class BidPackage
 
         $setters = [
             'setTransport' => [new ServiceReference('bid.transport.basic')],
+            'setAuthorization' => [$authorizationKey]
         ];
 
         $app->getServicesFactory()->registerService(
