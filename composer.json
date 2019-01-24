@@ -1,8 +1,8 @@
 {
     "name": "fei/bid-package",
     "description": "Bid client package integration for Objective PHP applications",
-    "type": "GPL-3.0",
-    "license": "",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Vincent Simonin",
