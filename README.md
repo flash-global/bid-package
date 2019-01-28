@@ -47,14 +47,17 @@ Create a file in your configuration directory and put your Bidder configuration 
 ```php
 <?php
 use Fei\Service\Bid\Package\Config\BidBaseUrl;
+use Fei\Service\Bid\Package\Config\BidAuthorization;
 
 return [
     (new BidBaseUrl())->setBaseUrl('http://bid.dev:8181'),
+    (new BidAuthorization())->setAuthorization('authorizationKey')
 ];
 ```
 
 In the previous example you need to set this configuration:
 
 * `BidBaseUrl` : represent the URL where the API can be contacted in order to send the bids
+* `BidAuthorization` : represent the Authorization Key to access on Bid Api server
 
 Please check out `bid-client` documentation for more information about how to use this client.
